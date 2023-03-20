@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-DXB2V7mFJxN/7qD/9WkwW30xd9vviE+ZI7Pjx8iVA6LlG3FqyjKqE8MRO1npn+smEjZnVp/Kf8x4W854MVvptQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="https://source.unsplash.com/random?logo" alt="CLZ Space Logo">
+                <span class="logo-text">CLZ Space</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Updates</a>
+                <a href="#">Events</a>
+                <a href="#">Launch Vehicles</a>
+                <a href="#">Launch your payload</a>
+                <a href="#">Careers</a>
+                <a href="#">Our Team</a>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
