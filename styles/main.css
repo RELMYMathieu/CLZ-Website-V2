@@ -240,6 +240,20 @@ h3 {
       transform: translateY(0);
     }
   }
+
+  .discord-link {
+    margin-left: -55rem;
+    margin-top: -0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.discord-link img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
   
 
 
