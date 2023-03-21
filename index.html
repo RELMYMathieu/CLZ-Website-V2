@@ -9,8 +9,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="/images/clz_space_logo_6.png" alt="CLZ Space Logo">
+            <a href="index.html" class="logo">
+                <div class="logo-container">
+                    <img src="/images/clz_space_logo_6.png" alt="CLZ Space Logo">
+                </div>
             </a>
             <div class="nav-links">
                 <a href="#">Updates</a>
@@ -30,9 +32,15 @@
         <p>CLZ's goal is to achieve.</p>
         <i data-feather="arrow-down-circle" class="arrow" onclick="scrollToNextSection()"></i>
     </main>    
-    <section class="recent-launch">
+    <section class="recent-launch" style="background-image: url(images/crew7thumbnail.png);">
         <h2>Latest Launch</h2>
         <h3>Crew-7 Mission</h3>
+        <a href="#" class="rewatch-button">Rewatch</a>
+        <i data-feather="arrow-down-circle" class="arrow" onclick="scrollToNextSection(true)"></i>
+    </section>
+    <section class="recent-launch" style="background-image: url(images/x4thumbnail..png);">
+        <h2>Recent Launch</h2>
+        <h3>X-4 Test Launch</h3>
         <a href="#" class="rewatch-button">Rewatch</a>
         <i data-feather="arrow-down-circle" class="arrow" onclick="scrollToNextSection(true)"></i>
     </section>
