@@ -8,3 +8,5 @@ function scrollToNextSection(isRecentLaunch) {
         document.querySelector('.recent-launch').scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+feather.replace()
