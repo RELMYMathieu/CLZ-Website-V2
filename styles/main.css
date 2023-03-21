@@ -1,26 +1,22 @@
 @font-face {
     font-family: 'Fibra-UltraBold';
-    src: url('/styles/fonts/Fibra-UltraBold.otf') format('truetype');
-    src: url('file:///Z:/CLZ%20Work%20Folder/CLZWebsiteV2/styles/fonts/Fibra-UltraBold.otf') format('truetype');
+    src: url('fonts/Fibra-UltraBold.otf') format('truetype');
   }
   
   @font-face {
     font-family: 'Fibra-UltraLight';
-    src: url('/styles/fonts/Fibra-UltraLight.otf') format('truetype');
-    src: url('file:///Z:/CLZ%20Work%20Folder/CLZWebsiteV2/styles/fonts/Fibra-UltraLight.otf') format('truetype');
+    src: url('fonts/Fibra-UltraLight.otf') format('truetype');
   }
   
   @font-face {
     font-family: 'FibraAlt-Bold';
-    src: url('/styles/fonts/FibraAlt-Bold.otf') format('truetype');
-    src: url('file:///Z:/CLZ%20Work%20Folder/CLZWebsiteV2/styles/fonts/FibraAlt-Bold.otf') format('truetype');
+    src: url('fonts/FibraAlt-Bold.otf') format('truetype');
   }
   
   @font-face {
     font-family: 'FibraAlt-Light';
-    src: url('/styles/fonts/FibraAlt-Light.otf') format('truetype');
-    src: url('file:///Z:/CLZ%20Work%20Folder/CLZWebsiteV2/styles/fonts/FibraAlt-Light.otf') format('truetype');
-  }
+    src: url('fonts/FibraAlt-Light.otf') format('truetype');
+  }  
 
 * {
     margin: 0;
