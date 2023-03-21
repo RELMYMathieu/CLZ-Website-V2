@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Fibra-UltraBold';
-    src: url('Fonts/Fibra-UltraBold.otf') format('truetype');
+    src: url('/Fonts/Fibra-UltraBold.otf') format('truetype');
   }
   
   @font-face {
     font-family: 'Fibra-UltraLight';
-    src: url('Fonts/Fibra-UltraLight.otf') format('truetype');
+    src: url('/Fonts/Fibra-UltraLight.otf') format('truetype');
   }
   
   @font-face {
     font-family: 'FibraAlt-Bold';
-    src: url('Fonts/FibraAlt-Bold.otf') format('truetype');
+    src: url('/Fonts/FibraAlt-Bold.otf') format('truetype');
   }
   
   @font-face {
     font-family: 'FibraAlt-Light';
-    src: url('Fonts/FibraAlt-Light.otf') format('truetype');
+    src: url('/Fonts/FibraAlt-Light.otf') format('truetype');
   }
   
 * {
