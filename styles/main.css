@@ -5,7 +5,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
 }
 
 .navbar {
@@ -130,6 +134,7 @@ html {
 
 .arrow {
     position: absolute;
+    size: 50px;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
@@ -145,10 +150,10 @@ html {
         transform: translateY(0) translateX(-50%);
     }
     40% {
-        transform: translateY(-30px) translateX(-50%);
+        transform: translateY(-5px) translateX(-50%);
     }
     60% {
-        transform: translateY(-15px) translateX(-50%);
+        transform: translateY(-5px) translateX(-50%);
     }
 }
 
