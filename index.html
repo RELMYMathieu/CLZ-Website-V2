@@ -56,6 +56,30 @@
         .nav-links a:hover {
             background-color: #555;
         }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url("https://source.unsplash.com/random?gif");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .main h1 {
+            font-size: 48px;
+            margin-bottom: 0.5rem;
+        }
+
+        .main p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -75,5 +99,9 @@
             </div>
         </nav>
     </header>
+    <main class="main">
+        <h1>This is CLZ Space</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget nibh ipsum.</p>
+    </main>
 </body>
 </html>
