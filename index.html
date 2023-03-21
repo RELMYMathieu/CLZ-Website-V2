@@ -25,7 +25,30 @@
     </header>
     <main class="main">
         <h1>This is CLZ Space</h1>
-        dolor sit amet, consectetur adipiscing elit. Duis eget nibh ipsum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget nibh ipsum.</p>
+        <div class="arrow-container">
+            <i class="fas fa-chevron-down arrow" onclick="scrollToNextSection()"></i>
+        </div>
     </main>
+    <section class="recent-launch">
+        <h2>Recent Launch</h2>
+        <h3>Placeholder Launch Name</h3>
+        <a href="#" class="rewatch-button">Rewatch</a>
+        <div class="arrow-container">
+            <i class="fas fa-chevron-down arrow" onclick="scrollToNextSection(true)"></i>
+        </div>
+    </section>
+    <script>
+        function scrollToNextSection(isRecentLaunch) {
+            if (isRecentLaunch) {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            } else {
+                document.querySelector('.recent-launch').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
