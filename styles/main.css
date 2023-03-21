@@ -312,6 +312,10 @@ h3 {
 .csuite-member:nth-last-child(2) {
   justify-self: center;
 }
+
+.csuite h1, .csuite h2 {
+    font-size: 2rem;
+  }
   
 
   
