@@ -24,9 +24,14 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+  }
+
 body {
+    min-height: 100vh;
     opacity: 0;
-    background-color: black; /* Set background color to black */
+    background-color: black;
     transition: opacity 0.5s ease-in-out;
     font-family: 'FibraAlt-Light', sans-serif;
 }
