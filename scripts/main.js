@@ -9,8 +9,17 @@ function scrollToNextSection(isRecentLaunch) {
     }
 }
 
+function scrollToNextTeamSection() {
+    const csuiteSection = document.querySelector('.csuite');
+    csuiteSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  window.addEventListener('load', function() {
+    document.body.style.opacity = 1;
+  });
+
 window.addEventListener('load', function() {
     document.body.style.opacity = 1;
   });
-  
+
 feather.replace()

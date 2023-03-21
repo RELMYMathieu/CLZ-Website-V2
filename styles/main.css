@@ -267,6 +267,53 @@ h3 {
     object-fit: contain;
 }
 
+.csuite {
+    padding: 2rem 1rem;
+    background-color: #f7f7f7;
+  }
+  
+  .csuite h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .csuite-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    justify-content: center;
+  }
+  .csuite-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .csuite-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .csuite-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .csuite-member p {
+    font-size: 1.2rem;
+    color: #999;
+  }
+
+  .csuite-member:last-child,
+.csuite-member:nth-last-child(2) {
+  justify-self: center;
+}
+  
+
   
 
 
