@@ -30,6 +30,8 @@ html {
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     opacity: 0;
     background-color: black;
     transition: opacity 0.5s ease-in-out;
