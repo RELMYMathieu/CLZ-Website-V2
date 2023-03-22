@@ -26,6 +26,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
 body {
@@ -61,7 +62,13 @@ h3 {
     background-color: transparent;
     padding: 1rem;
     z-index: 100;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+.navbar-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
 
 .logo-container {
     margin-left: -3rem;

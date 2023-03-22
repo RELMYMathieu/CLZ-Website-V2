@@ -33,7 +33,7 @@
       <video autoplay loop muted disablePictureInPicture>
         <source src="videos/PowerSlide.mp4" type="video/mp4" />
       </video>
-      <h1>Our Team</h1>
+      <h1>Meet The CLZ Team</h1>
       <i
         data-feather="arrow-down-circle"
         class="arrow"
@@ -49,14 +49,14 @@
           <p>CEO</p>
         </div>
         <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
+          <img src="images/horison.png" alt="Employee Name">
+          <h3>HorisonSkies</h3>
+          <p>COO</p>
         </div>
         <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
+          <img src="images/avia.png" alt="Employee Name">
+          <h3>AviaKenneth</h3>
+          <p>CDO</p>
         </div>
         <div class="csuite-member">
           <img src="images/isak.png" alt="Employee Name">
@@ -64,34 +64,19 @@
           <p>CMO</p>
         </div>
         <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
+          <img src="images/planeverse.png" alt="Employee Name">
+          <h3>Planeverse</h3>
+          <p>CFO</p>
         </div>
         <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
+          <img src="images/ron.png" alt="Employee Name">
+          <h3>Ron_1imited</h3>
+          <p>DGO</p>
         </div>
         <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
-        </div>
-        <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
-        </div>
-        <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
-        </div>
-        <div class="csuite-member">
-          <img src="https://via.placeholder.com/300x300" alt="Employee Name">
-          <h3>Employee Name</h3>
-          <p>Job Title</p>
+          <img src="images/greenmonster.png" alt="Employee Name">
+          <h3>Greenmonster448</h3>
+          <p>HCAC</p>
         </div>
       </div>
       <section class="csuite">
@@ -133,5 +118,19 @@
       <p>CLZ Space © 2023</p>
       <a href="#" class="login-button">Admin Login</a>
   </footer>
+  <script>
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+  const hideNavbarPercentage = 55;
+
+  if (scrollPercentage >= hideNavbarPercentage) {
+    navbar.classList.add("navbar-hidden");
+  } else {
+    navbar.classList.remove("navbar-hidden");
+  }
+});
+    </script>
   </body>
 </html>
