@@ -415,3 +415,24 @@ h3 {
     .apply-button:hover {
     background-color: #0056b3;
     }
+
+    .join-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+      }
+      
+      .join-us-link {
+        background-color: #007bff;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      
+      .join-us-link:hover {
+        background-color: #0056b3;
+      }
