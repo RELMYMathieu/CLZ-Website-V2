@@ -64,7 +64,8 @@ h3 {
 }
 
 .logo-container {
-    width: 150px;
+    margin-left: -3rem;
+    width: 120px;
     height: 80px;
     overflow: hidden;
 }
@@ -262,6 +263,19 @@ h3 {
 }
 
 .discord-link img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.youtube-link {
+    margin-left: -51rem;
+    margin-top: -0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.youtube-link img {
     width: 25px;
     height: 25px;
     object-fit: contain;
