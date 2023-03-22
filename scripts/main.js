@@ -14,6 +14,11 @@ function scrollToNextTeamSection() {
     csuiteSection.scrollIntoView({ behavior: 'smooth' });
   }
 
+  function scrollToNextJobSection() {
+    const csuiteSection = document.querySelector('.job-listing');
+    csuiteSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
   window.addEventListener('load', function() {
     document.body.style.opacity = 1;
   });
