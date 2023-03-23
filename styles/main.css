@@ -81,6 +81,7 @@ h3 {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    display: flex;
 }
 
 .logo img {
@@ -263,23 +264,21 @@ h3 {
   }
 
   .discord-link {
-    margin-left: -52rem;
+    margin-right: 1.2rem;
     margin-top: -0.5rem;
-    display: flex;
     align-items: center;
-}
+  } 
+  
+  .youtube-link {
+    margin-right: 40rem;
+    margin-top: -0.5rem;
+    align-items: center;
+  }
 
 .discord-link img {
     width: 25px;
     height: 25px;
     object-fit: contain;
-}
-
-.youtube-link {
-    margin-left: -51rem;
-    margin-top: -0.5rem;
-    display: flex;
-    align-items: center;
 }
 
 .youtube-link img {
