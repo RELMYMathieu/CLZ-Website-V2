@@ -1,18 +1,22 @@
 function scrollToNextSection(isRecentLaunch) {
-    if (isRecentLaunch) {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'smooth'
-        });
-    } else {
-        document.querySelector('.recent-launch').scrollIntoView({ behavior: 'smooth' });
-    }
+  if (isRecentLaunch) {
+      document.querySelector('.recent-launch').scrollIntoView({ behavior: 'smooth' });
+  } else {
+      document.querySelector('.recent-launch:nth-of-type(2)').scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 function scrollToNextTeamSection() {
-    const csuiteSection = document.querySelector('.csuite');
-    csuiteSection.scrollIntoView({ behavior: 'smooth' });
+  const currentScroll = window.scrollY;
+  const sections = document.querySelectorAll('.csuite');
+
+  for (const section of sections) {
+    if (section.getBoundingClientRect().top + window.scrollY > currentScroll) {
+      window.scrollTo({ top: section.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' });
+      break;
+    }
   }
+}
 
   function scrollToNextJobSection() {
     const csuiteSection = document.querySelector('.job-listing');
@@ -21,10 +25,7 @@ function scrollToNextTeamSection() {
 
   window.addEventListener('load', function() {
     document.body.style.opacity = 1;
-  });
-
-window.addEventListener('load', function() {
-    document.body.style.opacity = 1;
+    feather.replace()
   });
 
   function updateWorkExperienceFields() {
@@ -103,5 +104,3 @@ function startCountdown() {
     }
   }, 1000);
 }
-
-feather.replace()
