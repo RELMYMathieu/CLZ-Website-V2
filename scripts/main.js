@@ -52,27 +52,34 @@ window.addEventListener('load', function() {
 
   document.getElementById('num-companies').addEventListener('change', updateWorkExperienceFields);
 
-  document.getElementById('EngineerForm').addEventListener('submit', function (event) {
+  function sendForm(event) {
     event.preventDefault();
-    const formData = new FormData(event.target);
   
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://clzwebserver.jklninjacowz.repl.co', true);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
+    const form = document.getElementById('EngineerForm');
+    const formData = Object.fromEntries(new FormData(form).entries()); 
+  
+    fetch('https://clzwebserver.jklninjacowz.repl.co', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
           alert('Email sent successfully!');
+          form.style.display = 'none';
+          document.getElementById('thankYouMessage').style.display = 'block';
+          startCountdown();
         } else {
           alert('An error occurred while sending the email');
         }
-      }
-    };
-    document.getElementById("EngineerForm").style.display = "none";
-    document.getElementById("thankYouMessage").style.display = "block";
-    xhr.send(formData);
-    startCountdown();
-  });
-  
+      })
+      .catch((error) => {
+        console.error('Error sending form:', error);
+        alert('An error occurred while sending the email');
+      });
+  }   
 
 function startCountdown() {
   let countdown = document.getElementById("countdown");
