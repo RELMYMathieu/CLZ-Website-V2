@@ -415,6 +415,11 @@ h3 {
     background-color: #0056b3;
     }
 
+    .apply-button:disabled {
+      background-color: grey;
+      color: white;
+    }
+
     .join-us {
         display: flex;
         justify-content: center;

@@ -56,7 +56,10 @@ window.addEventListener('load', function() {
     event.preventDefault();
   
     const form = document.getElementById('EngineerForm');
-    const formData = Object.fromEntries(new FormData(form).entries()); 
+    const formData = Object.fromEntries(new FormData(form).entries());
+    const button = document.querySelector('.apply-button');
+    formData.formId = formId;
+    button.disabled = true;
   
     fetch('https://clzwebserver.jklninjacowz.repl.co', {
       method: 'POST',
@@ -78,8 +81,11 @@ window.addEventListener('load', function() {
       .catch((error) => {
         console.error('Error sending form:', error);
         alert('An error occurred while sending the email');
+      })
+      .finally(() => {
+        button.disabled = false;
       });
-  }   
+  }    
 
 function startCountdown() {
   let countdown = document.getElementById("countdown");
