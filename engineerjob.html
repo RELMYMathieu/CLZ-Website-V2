@@ -39,7 +39,7 @@
         </section>
 
         <section class="job-listing">
-            <form>
+            <form id="EngineerForm">
                 <h2>General Information</h2>
                 <label for="name">Discord Tag (Example#0000):</label>
                 <input type="text" id="name" name="name" required><br>
@@ -75,6 +75,10 @@
                     <input type="submit" class="apply-button" value="Submit Application">
                 </div>
             </form>
+            <div id="thankYouMessage" style="display: none;">
+                <h2>Thank you!</h2>
+                <p>Returning to index in <span id="countdown">10</span> seconds.</p>
+              </div>
         </section>
     </main>
 
@@ -83,33 +87,21 @@
         <p>CLZ Space © 2023</p>
         <a href="#" class="login-button">Admin Login</a>
     </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+          const navbar = document.querySelector(".navbar");
+          const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        
+          const hideNavbarPercentage = 50;
+        
+          if (scrollPercentage >= hideNavbarPercentage) {
+            navbar.classList.add("navbar-hidden");
+          } else {
+            navbar.classList.remove("navbar-hidden");
+          }
+        });
+            </script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="scripts/main.js"></script>
-    <script>
-        function updateWorkExperienceFields() {
-          const numCompanies = document.getElementById('num-companies').value;
-          const workExperienceFields = document.getElementById('work-experience-fields');
-    
-          workExperienceFields.innerHTML = '';
-    
-          for (let i = 0; i < numCompanies; i++) {
-            const companyField = `
-              <h3>Company ${i + 1}</h3>
-              <label for="company${i + 1}">Company:</label>
-              <input type="text" id="company${i + 1}" name="company${i + 1}"><br>
-    
-              <label for="position${i + 1}">Position:</label>
-              <input type="text" id="position${i + 1}" name="position${i + 1}"><br>
-    
-              <label for="duration${i + 1}">Duration:</label>
-              <input type="text" id="duration${i + 1}" name="duration${i + 1}"><br>
-            `;
-    
-            workExperienceFields.innerHTML += companyField;
-          }
-        }
-    
-        document.getElementById('num-companies').addEventListener('change', updateWorkExperienceFields);
-      </script>
 </body>
 </html>
