@@ -54,13 +54,15 @@ window.addEventListener('load', function() {
 
   function sendForm(event) {
     event.preventDefault();
-  
+    
     const form = document.getElementById('EngineerForm');
+    const formId = form.getAttribute('data-form-id');
     const formData = Object.fromEntries(new FormData(form).entries());
-    const button = document.querySelector('.apply-button');
     formData.formId = formId;
+    const button = document.querySelector('.apply-button');
     button.disabled = true;
-  
+
+    
     fetch('https://clzwebserver.jklninjacowz.repl.co', {
       method: 'POST',
       headers: {
@@ -68,23 +70,23 @@ window.addEventListener('load', function() {
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => {
-        if (response.ok) {
-          alert('Email sent successfully!');
-          form.style.display = 'none';
-          document.getElementById('thankYouMessage').style.display = 'block';
-          startCountdown();
-        } else {
-          alert('An error occurred while sending the email');
-        }
-      })
-      .catch((error) => {
-        console.error('Error sending form:', error);
+    .then((response) => {
+      if (response.ok) {
+        alert('Email sent successfully!');
+        form.style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+        startCountdown();
+      } else {
         alert('An error occurred while sending the email');
-      })
-      .finally(() => {
-        button.disabled = false;
-      });
+      }
+    })
+    .catch((error) => {
+      console.error('Error sending form:', error);
+      alert('An error occurred while sending the email');
+    })
+    .finally(() => {
+      button.disabled = false;
+    });
   }    
 
 function startCountdown() {
