@@ -456,7 +456,7 @@ h3 {
       
       form input[type="text"],
       form input[type="email"],
-      form input[type="tel"],
+      form input[type="RobloxUsername"],
       form input[type="number"],
       form textarea {
         width: 100%;
@@ -500,7 +500,7 @@ h3 {
       
       form input[type="text"]:focus,
       form input[type="email"]:focus,
-      form input[type="tel"]:focus,
+      form input[type="RobloxUsername"]:focus,
       form input[type="number"]:focus,
       form textarea:focus {
         border-color: #007bff;
